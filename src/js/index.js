@@ -32,6 +32,17 @@ And When is National Be a Millionaire Day?
     ],
   },
 ];
+const startButton = document.getElementById("start-btn");
+const quizTitle = document.getElementById("quiz-title");
+const questionContainerElement = document.getElementById("question-container");
+const answerOptionElement = document.getElementById("answer-options");
 
-function startGame() {}
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+  startButton.classList.add("hide");
+  quizTitle.classList.add("hide");
+  questionContainerElement.classList.remove("hide");
+  answerOptionElement.classList.remove("hide");
+}
 function nextQuestion() {}
