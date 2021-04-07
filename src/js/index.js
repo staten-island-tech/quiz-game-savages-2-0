@@ -32,3 +32,6 @@ And When is National Be a Millionaire Day?
     ],
   },
 ];
+
+function startGame() {}
+function nextQuestion() {}
