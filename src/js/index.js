@@ -10,7 +10,7 @@ What about Feb 7?
 And When is National Be a Millionaire Day?
     May 20. */
 
-[
+/* [
   {
     questionContent: [
       "When is National Name Your Car Day?",
@@ -31,7 +31,7 @@ And When is National Be a Millionaire Day?
       { choice: "March 1", correct: false },
     ],
   },
-];
+]; */
 
 const startButton = document.getElementById("start-btn");
 const quizTitle = document.getElementById("quiz-title");
@@ -45,10 +45,10 @@ let shuffledQuestions, currentQuestionIndex;
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-  console.log("Started");
+  //console.log("Started");
   startButton.classList.add("hide");
   quizTitle.classList.add("hide");
-  shuffledQuestions = question.sort(() => Math.random() - 0.5);
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   answerOptionElement.classList.remove("hide");
@@ -73,7 +73,7 @@ function showQuestion(question) {
 
 function selectAnswer() {}
 
-const question = [
+const questions = [
   {
     question: "When is National Name Your Car Day?",
     answers: [
