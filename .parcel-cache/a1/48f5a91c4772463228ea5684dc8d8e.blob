@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+
 body {
   font-size: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   padding: 0;
   margin: 0;
   width: 100wv;
@@ -24,34 +24,41 @@ body {
   padding: 2rem;
   border-radius: 3rem;
 }
+
 #quiz-title {
   font-size: 3rem;
   text-align: center;
   padding: 1rem;
 }
+
 #question-container {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 0.8rem;
   margin: 1rem 0;
 }
+
 .btn {
   font-size: 1.5rem;
   border-radius: 0.8rem;
   border-color: lightgrey;
 }
+
 .controls {
   display: flex;
   justify-content: center;
 }
+
 #start-btn {
   font-weight: bold;
   font-size: 3rem;
 }
+
 .hide {
   display: none;
 }
@@ -59,3 +66,9 @@ body {
 .btn:hover {
   border-color: black;
 }
+
+.btn correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+/*# sourceMappingURL=index.HASH_REF_4e4b48d14b05138322efb086ec8548c3.css.map */

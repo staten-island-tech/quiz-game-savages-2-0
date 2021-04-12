@@ -37,6 +37,7 @@ const startButton = document.getElementById("start-btn");
 const quizTitle = document.getElementById("quiz-title");
 const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
+const innerText = document.getElementById("innerText");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const answerOptionElement = document.getElementById("answer-options");
 
@@ -77,8 +78,8 @@ const question = [
   {
     question: "When is National Name Your Car Day?",
     answers: [
-      { text: "x", correct: true },
-      { text: "y", correct: false },
+      { text: "4", correct: true },
+      { text: "22", correct: false },
     ],
   },
 ];

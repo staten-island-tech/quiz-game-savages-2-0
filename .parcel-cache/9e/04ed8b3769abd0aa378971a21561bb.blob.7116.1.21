@@ -77,8 +77,8 @@ const question = [
   {
     question: "When is National Name Your Car Day?",
     answers: [
-      { text: "x", correct: true },
-      { text: "y", correct: false },
+      { text: "4", correct: true },
+      { text: "22", correct: false },
     ],
   },
 ];
