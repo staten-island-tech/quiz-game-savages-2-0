@@ -16,6 +16,8 @@ const quizTitle = document.getElementById("quiz-title");
 const questionContainerElement = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerOptionElement = document.getElementById("answer-options");
+const resultsHeading = document.getElementById("results-heading");
+const resultsValue = document.getElementById("total-score");
 
 let totalScore = 0;
 let shuffledQuestions, currentQuestionIndex;
@@ -35,6 +37,8 @@ function startGame() {
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   answerOptionElement.classList.remove("hide");
+  resultsHeading.classList.add("hide");
+  resultsValue.classList.add("hide");
   setNextQuestion();
 }
 
@@ -73,9 +77,20 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
+    showResults();
     startButton.innerText = "Restart";
     startButton.classList.remove("hide");
+    nextButton.classList.add("hide");
   }
+  document.getElementById("total-score").innerHTML =
+    totalScore + "/" + shuffledQuestions.length;
+}
+
+function showResults() {
+  questionContainerElement.classList.add("hide");
+  answerOptionElement.classList.add("hide");
+  resultsHeading.classList.remove("hide");
+  resultsValue.classList.remove("hide");
 }
 
 const questions = [
