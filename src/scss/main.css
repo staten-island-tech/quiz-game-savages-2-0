@@ -76,6 +76,19 @@ body {
   display: none;
 }
 
+.results {
+  text-align: center;
+}
+
+#results-heading {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+#total-score {
+  font-size: 2.5rem;
+}
+
 .btn:hover {
   border-color: black;
 }
